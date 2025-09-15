@@ -62,7 +62,7 @@ export default function App() {
       {isLoading && <Loader />}
       {isError && <ErrorMessage />}
       {movies.length > 0 && <MovieGrid movies={movies} onSelect={onSelect} />}
-      {isOpen && <MovieModal onClose={isActive} movie={movie} />}
+      {isOpen && movie && <MovieModal onClose={isActive} movie={movie} />}
     </div>
   );
 }
