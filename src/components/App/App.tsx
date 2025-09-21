@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import type { Movie } from "../../types/movie";
 import { fetchMovies } from "../../services/movieService";
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
@@ -29,7 +29,6 @@ export default function App() {
       toast("No movies found for your request.");
     }
   }, [data, query]);
-
   const handleSubmit = (newQuery: string) => {
     setQuery(newQuery);
     setPage(1);
