@@ -12,7 +12,7 @@
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "typescript": "~5.8.3",
-    "vite": "^7.1.2"
+    "vite": "^7.1.6"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.89.0",
